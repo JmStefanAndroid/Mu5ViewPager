@@ -7,29 +7,57 @@
     android:orientation="vertical"
     tools:context="me.stefan.mu5viewpager.MainActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <me.stefan.library.mu5viewpager.Mu5ViewPager
-            android:id="@+id/viewpager"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/index"
+
+            <me.stefan.library.mu5viewpager.Mu5ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="20dp"
+                android:text="0/0"
+                android:textColor="@android:color/white" />
+
+
+        </FrameLayout>
+
+        <me.stefan.library.mu5viewpager.SamView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="20dp"
-            android:text="0/0"
-            android:textColor="@android:color/white" />
-    </FrameLayout>
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp" />
 
-    <include layout="@layout/layout_func_in_uc" />
+        <me.stefan.library.mu5viewpager.SamView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp" />
 
-    <include layout="@layout/layout_func_in_uc" />
+        <me.stefan.library.mu5viewpager.SamView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp" />
 
-    <include layout="@layout/layout_func_in_uc" />
+        <me.stefan.library.mu5viewpager.SamView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
 
 </LinearLayout>

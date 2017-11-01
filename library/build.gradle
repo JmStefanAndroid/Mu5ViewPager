@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.JmStefanAndroid'
 
 android {
     compileSdkVersion 25
@@ -29,3 +31,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+
+
+//A customizable ViewPager on Android
+
