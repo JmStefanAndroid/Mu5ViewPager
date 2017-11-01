@@ -158,7 +158,7 @@ public class Mu5ViewPager extends ViewPager {
             setSourceHeights(height, position);
             imageView.setImageBitmap(loadedImage);
         } else {
-            Toast.makeText(getContext(), "图片为空", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), "error:picture is empty", Toast.LENGTH_LONG).show();
         }
     }
 
