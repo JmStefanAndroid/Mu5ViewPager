@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements Mu5Interface {
     private TextView indexTv;
 
     private String[] datas = new String[]{
-            "http://img.taopic.com/uploads/allimg/140826/267848-140R60T34860.jpg",
+            "http://www.quanjing.com/image/2017index/lx1.png",
             "http://imgsrc.baidu.com/imgad/pic/item/241f95cad1c8a7860ea6962d6d09c93d70cf5001.jpg",
             "http://pic.qiantucdn.com/58pic/16/69/41/02758PICS2Q_1024.jpg",
             "http://imgsrc.baidu.com/imgad/pic/item/a50f4bfbfbedab6440d4dfe5fd36afc379311e74.jpg",

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -135,7 +134,7 @@ public class Mu5ViewPager extends ViewPager {
     public void setData(List<String> urls, Mu5Interface mu5Interface) {
         if (urls == null || urls.size() == 0)
             throw new RuntimeException("error:don't give a empty source to me!");
-        this.mu5Interface=mu5Interface;
+        this.mu5Interface = mu5Interface;
         sourceHeights = new int[urls.size()];
         mu5PagerAdapter = new Mu5PagerAdapter(getContext(), urls, mu5Interface);
         this.setAdapter(mu5PagerAdapter);
@@ -173,7 +172,6 @@ public class Mu5ViewPager extends ViewPager {
      */
     public void setSourceHeights(int height, int position) {
 
-        Log.e(TAG, "height:" + height + "  position:" + position);
         if (height < 0) throw new RuntimeException("error:i got a wrong height:" + height);
         if (sourceHeights == null || sourceHeights.length == 0 || sourceHeights.length <= position)
             throw new RuntimeException("error:i don't have so much more index");

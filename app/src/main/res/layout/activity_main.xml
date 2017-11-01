@@ -35,29 +35,15 @@
 
         </FrameLayout>
 
-        <me.stefan.library.mu5viewpager.SamView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="20dp" />
+            android:autoLink="web"
+            android:text="项目地址：https://github.com/JmStefanAndroid/Mu5ViewPager
+\n作者：JmStefanAndroid https://github.com/JmStefanAndroid \n欢迎star follow 交流经验\n联系方式：email 648701906@qq.com "
 
-        <me.stefan.library.mu5viewpager.SamView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="20dp" />
+            android:textColor="@color/colorBlack33" />
 
-        <me.stefan.library.mu5viewpager.SamView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="20dp" />
-
-        <me.stefan.library.mu5viewpager.SamView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="20dp" />
     </LinearLayout>
 
 </LinearLayout>
