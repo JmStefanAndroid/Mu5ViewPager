@@ -33,9 +33,10 @@ public class MainActivity extends AppCompatActivity implements Mu5Interface {
         setContentView(R.layout.activity_main);
 
         mu5ViewPager = (Mu5ViewPager) findViewById(R.id.viewpager);
+
         indexTv = (TextView) findViewById(R.id.index);
 
-        mu5ViewPager.setData(datas, this);
+        mu5ViewPager.setData(datas, this);//datas支持绑定类型String[] 或者 List<String>
 
         indexTv.setText(getString(R.string.index_str, 1, datas.length));
     }
@@ -54,4 +55,6 @@ public class MainActivity extends AppCompatActivity implements Mu5Interface {
             }
         });
     }
+
+
 }
