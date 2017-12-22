@@ -154,7 +154,7 @@ public class Mu5ViewPager extends ViewPager {
     public void bindSource(Bitmap loadedImage, int position, ImageView imageView) {
         if (loadedImage != null) {
             float scale = (float) loadedImage.getHeight() / loadedImage.getWidth();
-            int height = (int) (scale * Utils.getDisplayWidth(getContext()));
+            int height = (int) (scale * Utils.INSTANCE.getDisplayWidth(getContext()));
             setSourceHeights(height, position);
             imageView.setImageBitmap(loadedImage);
         } else {
@@ -170,7 +170,7 @@ public class Mu5ViewPager extends ViewPager {
      * @param height
      * @param position
      */
-    public void setSourceHeights(int height, int position) {
+    private void setSourceHeights(int height, int position) {
 
         if (height < 0) throw new RuntimeException("error:i got a wrong height:" + height);
         if (sourceHeights == null || sourceHeights.length == 0 || sourceHeights.length <= position)

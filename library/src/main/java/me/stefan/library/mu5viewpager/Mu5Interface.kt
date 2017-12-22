@@ -7,14 +7,14 @@ import android.widget.ImageView;
  * Func:
  */
 
-public interface Mu5Interface {
+interface Mu5Interface {
     /**
      * 位置发生改变
      *
      * @param currentIndex
      */
-    void onIndexChange(int currentIndex);
+    fun onIndexChange(currentIndex: Int)
 
 
-    void onLoadImage(ImageView imageView, String url, int position);
+    fun onLoadImage(imageView: ImageView, url: String, position: Int)
 }
